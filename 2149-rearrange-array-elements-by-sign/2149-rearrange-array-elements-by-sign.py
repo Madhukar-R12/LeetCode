@@ -7,8 +7,10 @@ class Solution:
                 pos.append(nums[i])
             else:
                 neg.append(nums[i])
-        arr = []
+        count = 0
         for k,l in zip(pos,neg):
-            arr.append(k)
-            arr.append(l)
-        return arr
+            nums[2*count] = k
+            nums[2*count+1] = l
+            count+=1
+        return nums
+            

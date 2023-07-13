@@ -1,5 +1,8 @@
 class Solution:
     def rearrangeArray(self, nums: List[int]) -> List[int]:
+        
+        #Optimal Solution
+        
         ans = [0]*len(nums)
         even = 0
         odd = 1
@@ -13,17 +16,8 @@ class Solution:
         return ans
                 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       # Brute Force Solution 
+
 #         pos = []
 #         neg = []
 #         for i in range(len(nums)):
